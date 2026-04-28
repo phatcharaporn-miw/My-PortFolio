@@ -25,8 +25,8 @@ export default function Footer() {
     },
     {
       label: "GitHub",
-      value: "https://github.com/phatcharaporn-miew/",
-      display: "github.com/phatcharaporn-miew",
+      value: "https://github.com/phatcharaporn-miw/",
+      display: "github.com/phatcharaporn-miw",
       copyable: false,
       link: true,
     },
