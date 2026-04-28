@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# แฟ้มผลงาน (Portfolio)
 
-## Getting Started
+แฟ้มผลงานนี้จัดทำขึ้นเพื่อรวบรวมโปรเจกที่พัฒนา ทักษะ และประสบการณ์ในการเป็นนักพัฒนาเว็บแบบ Full-Stack
 
-First, run the development server:
+ภายใน repository นี้ประกอบด้วยโปรเจกที่แสดงให้เห็นถึงความสามารถในการออกแบบและพัฒนาเว็บแอปพลิเคชันด้วยเทคโนโลยีสมัยใหม่
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## โปรเจกที่รวมอยู่ใน Portfolio
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Skllr (Internship Project)
+โปรเจกนี้เป็นส่วนหนึ่งของการฝึกงาน พัฒนาเป็น Web Application สำหรับการเรียนรู้ออนไลน์ โดยมุ่งเน้นการจัดการคอร์สเรียน การติดตามความก้าวหน้า และการประเมินผลของผู้ใช้งาน
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- ระบบจัดการคอร์สและเนื้อหา (Course Management System)
+- ระบบติดตามความก้าวหน้าการเรียนรู้ของผู้ใช้งาน (Learning Progress Tracking)
+- ระบบการเข้าเรียนต่อเนื่อง (Daily Streak)
+- ระบบแบบทดสอบและการประเมินผล (Quiz & Assessment System)
+- ออกแบบโครงสร้างระบบให้รองรับการขยายตัวในอนาคต (Scalable System Design)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+### ระบบเว็บแอปพลิเคชันสมาคมศิษย์เก่า
+ระบบ Full-stack สำหรับจัดการกิจกรรมศิษย์เก่า กระดานสนทนา กิจกรรม การบริจาค และระบบอีคอมเมิร์ซ
+- ระบบแจ้งเตือนแบบ polling ผ่าน API
+- ระบบกำหนดสิทธิ์การใช้งาน (Role-based access control)
+- ระบบเข้าร่วมกิจกรรมด้วย QR Code
+- ระบบบริจาคและขายสินค้าที่ระลึก พร้อม PromptPay QR
+  
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### เว็บแอปพลิเคชัน Menu Kuru
+เว็บแอปพลิเคชันสำหรับค้นหาสูตรอาหารไทยและเรียนรู้วิธีทำอาหาร
+- ระบบค้นหาสูตรอาหาร
+- แสดงขั้นตอนการทำอาหารแบบละเอียด
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+### เว็บแอปพลิเคชัน BabyCare
+พัฒนาเว็บแอปพลิเคชันสำหรับให้คำแนะนำด้านโภชนาการ กิจกรรม และของเล่นสำหรับเด็ก โดยออกแบบระบบ Backend ด้วย Java Spring Boot และพัฒนา RESTful API เชื่อมต่อกับฐานข้อมูล MySQL พร้อมฟังก์ชันสำหรับจัดการและแนะนำเนื้อหาตามช่วงอายุของเด็ก
+- ให้คำแนะนำด้านโภชนาการสำหรับเด็ก
+- แนะนำกิจกรรมที่เหมาะสมตามช่วงวัย
+- แนะนำของเล่นตามพัฒนาการของเด็ก
+- ระบบจัดการและแสดงเนื้อหาแบบแบ่งตามอายุ
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## เทคโนโลยีที่ใช้
+
+- Frontend: React.js, Next.js, HTML, CSS, JavaScript, Bootstrap, TypeScript, Tailwind CSS
+- Backend: Node.js (Express.js)
+- Database: MySQL
+- Authentication: Session / JWT / OTP
+- อื่น ๆ: REST API, ระบบ QR Code
+
+---
+
+## จุดเด่นของผลงาน
+
+- พัฒนาเว็บแอปพลิเคชันแบบ Full-stack หลายระบบ
+- ออกแบบ REST API และโครงสร้างฐานข้อมูล
+- พัฒนาระบบควบคุมสิทธิ์การใช้งาน (Role-based)
+- มีประสบการณ์ระบบ e-commerce, donation และ event management
+- เข้าใจการออกแบบระบบและโครงสร้างโปรเจกแบบใช้งานจริง
+
+---
+
+## เกี่ยวกับผู้พัฒนา
+
+นักพัฒนาเว็บที่สนใจการออกแบบระบบและพัฒนาเว็บแอปพลิเคชันให้มีประสิทธิภาพ ใช้งานง่าย และรองรับการใช้งานจริง
+
+---
+
+## ช่องทางติดต่อ
+
+- GitHub: https://github.com/phatcharaporn-miw
+- Email: phatcharaporn.nilp@gmail.com
