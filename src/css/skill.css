@@ -16,10 +16,10 @@
           position: relative;
           transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
-        .skill-badge:hover {
+        /* .skill-badge:hover {
           transform: translateY(-3px);
           box-shadow: 0 6px 16px rgba(74,98,138,0.2);
-        }
+        } */
         .skill-tooltip {
           visibility: hidden;
           opacity: 0;

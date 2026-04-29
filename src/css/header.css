@@ -32,6 +32,7 @@
 .img-float {
   animation: float 4s ease-in-out infinite;
 }
+
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-12px); }
@@ -75,3 +76,4 @@
   0%, 100% { box-shadow: 0 0 20px rgba(122,178,211,0.3); }
   50% { box-shadow: 0 0 40px rgba(122,178,211,0.6); }
 }
+
