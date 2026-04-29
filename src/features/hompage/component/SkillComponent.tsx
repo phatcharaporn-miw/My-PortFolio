@@ -1,9 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import "../../../css/skill.css";
-import {
- Briefcase, GraduationCap,
-} from "lucide-react";
+import { Briefcase, GraduationCap } from "lucide-react";
 
 export default function Skill() {
   const observerRef = useRef<IntersectionObserver | null>(null);
@@ -89,25 +87,25 @@ export default function Skill() {
       badge: "Frontend",
     },
   ];
-  
-const experiences = [
-  {
-    year: "Nov 2025 — Mar 2026",
-    title: "Frontend Developer",
-    org: "Woxa Corporation Limited",
-    sub: "Co-op Internship",
-    desc: "Developed Skllr Learning Platform using Next.js, TypeScript and Tailwind CSS. Built gamification systems and integrated APIs with the backend team.",
-    icon: Briefcase,
-  },
-  {
-    year: "2022 — 2026",
-    title: "B.S. Information Technology",
-    org: "College of Computing, Khon Kaen University",
-    sub: "Bachelor's Degree",
-    desc: "",
-    icon: GraduationCap,
-  },
-];
+
+  const experiences = [
+    {
+      year: "Nov 2025 — Mar 2026",
+      title: "Frontend Developer",
+      org: "Woxa Corporation Limited",
+      sub: "Co-op Internship",
+      desc: "Developed Skllr Learning Platform using Next.js, TypeScript and Tailwind CSS. Built gamification systems and integrated APIs with the backend team.",
+      icon: Briefcase,
+    },
+    {
+      year: "2022 — 2026",
+      title: "B.S. Information Technology",
+      org: "College of Computing, Khon Kaen University",
+      sub: "Bachelor's Degree",
+      desc: "",
+      icon: GraduationCap,
+    },
+  ];
 
   return (
     <>
@@ -115,10 +113,10 @@ const experiences = [
         {/* Skills */}
         <div id="skills" className="px-8 md:px-16 lg:px-24 py-16 md:py-20">
           <div className="fade-up mb-14">
-            <span className="text-quaternary text-sm md:text-base font-semibold uppercase tracking-widest">
+            <span className="text-sm uppercase tracking-[0.2em] text-quaternary font-semibold">
               Skills
             </span>
-            <h2 className="text-tertiary text-3xl md:text-4xl lg:text-5xl font-semibold mt-2 mb-2">
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-tertiary mt-3">
               What I work with
             </h2>
             {/* <p className="text-secondary text-sm md:text-base mb-10">Hover over a skill to see where I've used it</p> */}
@@ -182,10 +180,9 @@ const experiences = [
                 key={p.name}
                 className={`reveal grid lg:grid-cols-2 gap-10 lg:gap-16 items-center ${i % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""}`}
               >
-
                 <div className="relative group">
                   <div className="absolute -inset-2 bg-gradient-to-br from-primary/40 to-transparent rounded-3xl blur-xl opacity-60 group-hover:opacity-100 transition-opacity" />
-                  <div className="relative aspect-[4/3] rounded-3xl overflow-hidden border border-border bg-card">
+                  <div className="relative aspect-[4/3] rounded-3xl overflow-hidden border border-secondary bg-card">
                     {p.image ? (
                       <img
                         src={p.image}
@@ -212,10 +209,10 @@ const experiences = [
                 {/* Content */}
                 <div className="space-y-5">
                   <p className="text-sm text-secondary font-medium">{p.year}</p>
-                  <h3 className="text-3xl md:text-5xl font-bold text-tertiary tracking-tight">
+                  <h3 className="text-2xl md:text-5xl font-bold text-tertiary tracking-tight">
                     {p.name}
                   </h3>
-                  <p className="text-base md:text-lg text-tertiary/80 leading-relaxed">
+                  <p className="text-sm md:text-lg text-tertiary/80 leading-relaxed">
                     {p.desc}
                   </p>
                   <ul className="space-y-2 pt-2">
@@ -248,29 +245,52 @@ const experiences = [
         <hr className="border-secondary mx-8 md:mx-16 lg:mx-24" />
 
         {/* Experience */}
-        <section id="experience" className="py-24">
-        <div className="container mx-auto max-w-4xl">
-          <div className="reveal mb-14">
-            <p className="text-sm uppercase tracking-[0.2em] text-quaternary mb-3 font-semibold">Experience</p>
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-tertiary">Where I've been.</h2>
-          </div>
-          <div className="relative pl-8 md:pl-12 border-secondary space-y-12">
-            {experiences.map((e) => (
-              <div key={e.title} className="reveal relative group">
-                <div className="absolute -left-[2.6rem] md:-left-[3.6rem] top-1 w-12 h-12 rounded-full border-2 border-quaternary grid place-items-center group-hover:bg-quaternary group-hover:text-quaternary transition-colors">
-                  <e.icon className="w-5 h-5 text-quaternary group-hover:text-tertiary" />
+        <section
+          id="experience"
+          className="px-8 md:px-16 lg:px-24 py-16 md:py-24"
+        >
+          <div className="max-w-4xl mx-auto">
+            <div className="reveal mb-10 md:mb-14">
+              <p className="text-xs md:text-sm uppercase tracking-[0.2em] text-quaternary mb-3 font-semibold">
+                Experience
+              </p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-tertiary">
+                Where I've been.
+              </h2>
+            </div>
+            
+            <div className="relative pl-9 md:pl-14 space-y-8 md:space-y-12">
+              <div className="absolute left-3 md:left-5 top-0 bottom-0 w-px bg-secondary/50" />
+
+              {experiences.map((e) => (
+                <div key={e.title} className="reveal relative group">
+                  {/* Icon */}
+                  <div className="absolute -left-[2.5rem] md:-left-[3.6rem] top-1 w-8 h-8 md:w-12 md:h-12 rounded-full border-2 border-quaternary bg-white grid place-items-center group-hover:bg-quaternary transition-colors">
+                    <e.icon className="w-4 h-4 md:w-5 md:h-5 text-quaternary group-hover:text-white transition-colors" />
+                  </div>
+
+                  <div className="rounded-2xl border border-secondary bg-white p-5 md:p-6 hover:border-quaternary transition-colors">
+                    <p className="text-xs uppercase tracking-widest text-quaternary mb-2 font-semibold">
+                      {e.year}
+                    </p>
+                    <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-tertiary">
+                      {e.title}
+                    </h3>
+                    <p className="text-tertiary/80 text-sm md:text-base mt-1">
+                      {e.org} · <span className="text-quaternary">{e.sub}</span>
+                    </p>
+
+                    {e.desc && (
+                      <p className="text-tertiary/80 text-sm md:text-base mt-3 leading-relaxed">
+                        {e.desc}
+                      </p>
+                    )}
+                  </div>
                 </div>
-                <div className="rounded-2xl border border-secondary bg-white p-6 hover:border-quaternary transition-colors">
-                  <p className="text-xs uppercase tracking-widest text-quaternary mb-2 font-semibold">{e.year}</p>
-                  <h3 className="text-xl md:text-2xl font-bold text-tertiary">{e.title}</h3>
-                  <p className="text-tertiary/80 mt-1">{e.org} · <span className="text-quaternary">{e.sub}</span></p>
-                  {e.desc && <p className="text-tertiary/80 text-sm md:text-base mt-3 leading-relaxed">{e.desc}</p>}
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
       </div>
     </>
   );

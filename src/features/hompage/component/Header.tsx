@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import "../../../css/header.css";
-import { ArrowRight, Download, MapPin, Code2, Menu, X } from "lucide-react";
+import { ArrowRight, Download, MapPin, Menu, X } from "lucide-react";
 
 export default function Header() {
   const [loaded, setLoaded] = useState(false);
@@ -59,78 +59,96 @@ export default function Header() {
   return (
     <div className={loaded ? "loaded" : ""}>
       {/* Navbar */}
-      <nav className="bg-tertiary px-8 md:px-16 lg:px-24 fade-down fixed top-0 left-0 right-0 w-full z-50 border-b border-white/10 backdrop-blur-xl">
-        <div className="container mx-auto flex items-center justify-between py-4">
-          {/* Logo */}
-          <a href="#about" className="flex items-center gap-2 font-bold text-md tracking-tight">
-            <span className="w-8 h-8 rounded-lg bg-quaternary text-tertiary grid place-items-center font-bold">
-              PN
-            </span>
-            <span className="text-primary font-bold text-lg md:text-xl tracking-wide hidden sm:inline">
-              Phatcharaporn
-            </span>
-          </a>
+<nav className="bg-tertiary/90 px-6 md:px-16 lg:px-24 fade-down fixed top-0 left-0 right-0 w-full z-50 border-b border-white/10 backdrop-blur-xl">
+  <div className="flex items-center justify-between py-3 md:py-4">
 
-          {/* links */}
-          <div className="hidden md:flex items-center gap-1">
-            {navLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                onClick={() => setActive(link.href.slice(1))}
-                className={`px-4 py-2 rounded-full text-sm transition-colors ${
-                  active === link.href.slice(1)
-                    ? "bg-quaternary/20 text-quaternary"
-                    : "text-secondary hover:text-primary"
-                }`}
-              >
-                {link.label}
-              </a>
-            ))}
-          </div>
+    {/* Logo */}
+    <a href="#about" className="flex items-center gap-2">
+      <span className="w-8 h-8 rounded-lg bg-quaternary text-tertiary grid place-items-center font-bold text-sm flex-shrink-0">
+        PN
+      </span>
+      <span className="text-primary font-bold text-base md:text-xl tracking-wide hidden sm:inline">
+        Phatcharaporn
+      </span>
+    </a>
 
-          <a
-            href="#contact"
-            className="hidden md:flex items-center gap-2 bg-quaternary text-tertiary py-2 px-4 rounded-full text-sm font-medium hover:opacity-90 transition-opacity"
-          >
-            Hire me <ArrowRight className="w-4 h-4" />
-          </a>
+    {/* links */}
+    <div className="hidden md:flex items-center gap-1">
+      {navLinks.map((link) => (
+        
+        <a  key={link.label}
+          href={link.href}
+          onClick={() => setActive(link.href.slice(1))}
+          className={`px-3 lg:px-4 py-2 rounded-full text-sm transition-colors ${
+            active === link.href.slice(1)
+              ? "bg-quaternary/20 text-quaternary"
+              : "text-secondary hover:text-primary"
+          }`}
+        >
+          {link.label}
+        </a>
+      ))}
+    </div>
 
-          {/* Mobile menu button */}
-          <button
-            className="md:hidden text-primary"
-            onClick={() => setOpen(!open)}
-          >
-            {open ? <X /> : <Menu />}
-          </button>
-        </div>
+    {/* Right */}
+    <div className="flex items-center gap-2">
+      
+      <a  href="#contact"
+        className="hidden md:flex items-center gap-2 bg-quaternary text-tertiary py-2 px-4 rounded-full text-sm font-medium hover:opacity-90 transition-opacity"
+      >
+        Hire me <ArrowRight className="w-3.5 h-3.5" />
+      </a>
 
-        {/* Mobile menu */}
-        {open && (
-          <div className="md:hidden border-t border-white/10 py-4 space-y-1">
-            {navLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                onClick={() => {
-                  setActive(link.href.slice(1));
-                  setOpen(false);
-                }}
-                className="block py-2 text-secondary hover:text-primary text-sm"
-              >
-                {link.label}
-              </a>
-            ))}
-          </div>
-        )}
-      </nav>
+      {/* menu button */}
+      <button
+        className="md:hidden text-primary p-1.5 rounded-lg hover:bg-white/10 transition-colors"
+        onClick={() => setOpen(!open)}
+        aria-label="Toggle menu"
+      >
+        {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+      </button>
+    </div>
+
+  </div>
+
+  {/* Mobile menu */}
+  {open && (
+    <div className="md:hidden border-t border-white/10 py-3 space-y-1 pb-4">
+      {navLinks.map((link) => (
+        
+        <a  key={link.label}
+          href={link.href}
+          onClick={() => {
+            setActive(link.href.slice(1));
+            setOpen(false);
+          }}
+          className={`flex items-center px-3 py-2.5 rounded-xl text-sm transition-colors ${
+            active === link.href.slice(1)
+              ? "bg-quaternary/20 text-quaternary"
+              : "text-secondary hover:text-primary hover:bg-white/5"
+          }`}
+        >
+          {link.label}
+        </a>
+      ))}
+      <div className="pt-2 px-3">
+        
+        <a  href="#contact"
+          onClick={() => setOpen(false)}
+          className="flex items-center justify-center gap-2 bg-quaternary text-tertiary py-2.5 px-4 rounded-full text-sm font-medium w-full hover:opacity-90 transition-opacity"
+        >
+          Hire me <ArrowRight className="w-3.5 h-3.5" />
+        </a>
+      </div>
+    </div>
+  )}
+</nav>
 
       {/* Hero */}
       <section
         id="about"
         className="bg-tertiary px-8 md:px-16 lg:px-24 pt-28 pb-16 md:pt-36 md:pb-24 relative overflow-hidden"
       >
-        {/* Grid background */}
         <div className="absolute inset-0 grid-bg pointer-events-none opacity-40" />
 
         <div
@@ -193,7 +211,7 @@ export default function Header() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 btn-outline border border-secondary text-primary py-3 px-7 rounded-full text-base font-medium"
               >
-                <Download className="w-4 h-4" /> Download CV
+                <Download className="w-4 h-4" /> Download Resume
               </a>
             </div>
 
@@ -205,7 +223,6 @@ export default function Header() {
             </div>
           </div>
 
-          {/* Right - Image */}
           <div className="fade-right delay-2 flex-shrink-0 relative">
             <div
               className="absolute -top-6 -right-6 w-28 h-28 opacity-20 pointer-events-none"
