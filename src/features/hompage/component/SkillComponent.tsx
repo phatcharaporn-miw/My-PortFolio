@@ -160,7 +160,7 @@ export default function Skill() {
 
         {/* Projects */}
         <div id="projects" className="px-8 md:px-16 lg:px-24 py-16 md:py-20">
-          <div className="reveal flex items-end justify-between flex-wrap gap-4 mb-16">
+          <div className="reveal flex items-end justify-between flex-wrap gap-4 mb-16 fade-up">
             <div className="max-w-2xl">
               <p className="text-sm uppercase tracking-[0.2em] text-quaternary mb-3 font-semibold">
                 Projects
@@ -180,7 +180,7 @@ export default function Skill() {
                 key={p.name}
                 className={`reveal grid lg:grid-cols-2 gap-10 lg:gap-16 items-center ${i % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""}`}
               >
-                <div className="relative group">
+                <div className="relative group fade-up">
                   <div className="absolute -inset-2 bg-gradient-to-br from-primary/40 to-transparent rounded-3xl blur-xl opacity-60 group-hover:opacity-100 transition-opacity" />
                   <div className="relative aspect-[4/3] rounded-3xl overflow-hidden border border-secondary bg-card">
                     {p.image ? (
@@ -207,7 +207,7 @@ export default function Skill() {
                 </div>
 
                 {/* Content */}
-                <div className="space-y-5">
+                <div className="space-y-5 fade-up">
                   <p className="text-sm text-secondary font-medium">{p.year}</p>
                   <h3 className="text-2xl md:text-5xl font-bold text-tertiary tracking-tight">
                     {p.name}
@@ -250,7 +250,7 @@ export default function Skill() {
           className="px-8 md:px-16 lg:px-24 py-16 md:py-24"
         >
           <div className="max-w-4xl mx-auto">
-            <div className="reveal mb-10 md:mb-14">
+            <div className="reveal mb-10 md:mb-14 fade-up">
               <p className="text-xs md:text-sm uppercase tracking-[0.2em] text-quaternary mb-3 font-semibold">
                 Experience
               </p>
@@ -263,7 +263,7 @@ export default function Skill() {
               <div className="absolute left-3 md:left-5 top-0 bottom-0 w-px bg-secondary/50" />
 
               {experiences.map((e) => (
-                <div key={e.title} className="reveal relative group">
+                <div key={e.title} className="reveal relative group fade-up">
                   {/* Icon */}
                   <div className="absolute -left-[2.5rem] md:-left-[3.6rem] top-1 w-8 h-8 md:w-12 md:h-12 rounded-full border-2 border-quaternary bg-white grid place-items-center group-hover:bg-quaternary transition-colors">
                     <e.icon className="w-4 h-4 md:w-5 md:h-5 text-quaternary group-hover:text-white transition-colors" />
