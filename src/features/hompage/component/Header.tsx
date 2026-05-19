@@ -183,16 +183,20 @@ export default function Header() {
               <div className="flex items-center gap-3 mt-3">
                 <div className="h-px w-8 bg-quaternary" />
                 <p className="text-secondary text-xl md:text-2xl font-medium">
-                  Web Developer · Frontend-focused
+                  {/* Web Developer · Frontend-focused */}
+                  UX/UI-focused Frontend Developer
                 </p>
               </div>
             </div>
 
             {/* Description */}
             <p className="fade-left delay-3 text-secondary text-base md:text-md leading-relaxed max-w-md">
-              A Web Developer graduate with real-world experience through a
+              {/* A Web Developer graduate with real-world experience through a
               Co-op internship. Open-minded, growth-driven, and always ready to
-              learn whatever it takes to deliver great work.
+              learn whatever it takes to deliver great work. */}
+              A frontend developer with a strong interest in UX/UI design. I
+              enjoy creating intuitive and user-friendly digital experiences and
+              turning designs into responsive, real-world products.
             </p>
 
             {/* Buttons */}
@@ -259,13 +263,20 @@ export default function Header() {
             {[...Array(2)].map((_, k) => (
               <div key={k} className="flex gap-12 shrink-0">
                 {[
+                  // "React",
+                  // "Next.js",
+                  // "TypeScript",
+                  // "Tailwind",
+                  // "Node.js",
+                  // "MySQL",
+                  // "MongoDB",
+                  "Figma",
+                  "User Flow",
+                  "Wireframing",
                   "React",
                   "Next.js",
                   "TypeScript",
                   "Tailwind",
-                  "Node.js",
-                  "MySQL",
-                  "MongoDB",
                 ].map((w) => (
                   <span key={w} className="flex items-center gap-12">
                     {w} <span className="text-quaternary">✦</span>

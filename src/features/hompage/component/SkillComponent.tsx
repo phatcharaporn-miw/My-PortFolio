@@ -41,6 +41,16 @@ export default function Skill() {
     "Kotlin (Basic)",
   ];
 
+  const designSkills = [
+    "User Flow",
+    "Wireframing",
+    "Prototyping",
+    "Responsive Design",
+    "Usability",
+    "Design Systems",
+    "Figma",
+  ];
+
   const projects = [
     {
       year: "2026 · Co-op Internship",
@@ -54,12 +64,13 @@ export default function Skill() {
         "Zustand",
         "TanStack Query",
       ],
+      //
       highlights: [
-        "Built gamification system with XP, rewards and streaks",
-        "Integrated REST APIs with backend team",
-        "Designed Learning Path & Progress Tracking",
+        "Implemented UI based on UX/UI designs from the design team",
+        "Collaborated with designers to ensure usability and consistency",
+        "Built gamification features to enhance engagement",
       ],
-      badge: "Co-op Internship",
+      badge: ["Co-op Internship"],
     },
     {
       year: "2024 — 2025",
@@ -67,12 +78,19 @@ export default function Skill() {
       image: "/img/alumni.png",
       desc: "Full-stack web app for the College of Computing alumni. Supports alumni management, donations, souvenir purchasing and a community webboard.",
       tags: ["React.js", "Node.js", "MySQL"],
+      // highlights: [
+      //   "Developed full-stack with React.js and Node.js",
+      //   "Built alumni management & donation system",
+      //   "Designed webboard for community interaction",
+      // ],
       highlights: [
-        "Developed full-stack with React.js and Node.js",
-        "Built alumni management & donation system",
-        "Designed webboard for community interaction",
+        "Designed and developed user interfaces for alumni management",
+        "Focused on usability and information structure",
+        "Built full-stack features with React and Node.js",
       ],
-      badge: "Full-stack",
+      badge: ["Full-stack", "UX/UI"],
+      figma:
+        "https://www.figma.com/design/WL9A7u0NXSryPgwdNuMrH2/Web-Alumni?node-id=0-1&t=ViPYgOUN1BRlDF7O-1",
     },
     {
       year: "2023",
@@ -81,10 +99,14 @@ export default function Skill() {
       desc: "Thai food recipe web app allowing users to search for dishes and learn how to cook authentic Thai cuisine step by step.",
       tags: ["HTML", "CSS"],
       highlights: [
+        "Designed responsive user interface",
+        "Focused on simple and intuitive user experience",
         "Developed responsive UI with HTML & CSS",
-        "Implemented search and filtering",
       ],
-      badge: "Frontend",
+      badge: ["Frontend", "UX/UI"],
+      figma:
+        "https://www.figma.com/design/1LtgpllRg1Yn7M3spMUGNq/Mocup?node-id=0-1&t=rRyv7N8QTo10jWuy-1",
+      github: "",
     },
   ];
 
@@ -122,6 +144,22 @@ export default function Skill() {
             {/* <p className="text-secondary text-sm md:text-base mb-10">Hover over a skill to see where I've used it</p> */}
           </div>
 
+          <div className="fade-up mb-8">
+            <p className="text-secondary text-sm md:text-base mb-4 font-medium">
+              - UX/UI Skills
+            </p>
+            <div className="flex flex-wrap gap-3">
+              {designSkills.map((s) => (
+                <span
+                  key={s}
+                  className="skill-badge bg-quaternary text-primary text-sm md:text-base lg:text-md py-2 px-5 md:py-3 md:px-6 rounded-full cursor-default"
+                >
+                  {s}
+                </span>
+              ))}
+            </div>
+          </div>
+
           <div className="fade-up stagger-1 mb-4">
             <p className="text-secondary text-sm md:text-base mb-4 font-medium">
               - Core Stack
@@ -133,7 +171,7 @@ export default function Skill() {
                   className="skill-badge bg-quaternary text-primary text-sm md:text-base lg:text-md py-2 px-5 md:py-3 md:px-6 rounded-full cursor-default"
                 >
                   {s.name}
-                  <span className="skill-tooltip">Used in: {s.used}</span>
+                  {/* <span className="skill-tooltip">Used in: {s.used}</span> */}
                 </span>
               ))}
             </div>
@@ -200,9 +238,16 @@ export default function Skill() {
                     )}
 
                     {/* Badge */}
-                    <span className="absolute top-5 left-5 px-3 py-1.5 rounded-full backdrop-blur text-xs uppercase tracking-wider border border-secondary text-tertiary bg-white font-medium">
-                      {p.badge}
-                    </span>
+                    <div className="absolute top-5 left-5 flex flex-wrap gap-2">
+                      {p.badge.map((b) => (
+                        <span
+                          key={b}
+                          className="px-3 py-1.5 rounded-full backdrop-blur text-xs uppercase tracking-wider border border-secondary text-tertiary bg-white font-medium"
+                        >
+                          {b}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </div>
 
@@ -236,6 +281,19 @@ export default function Skill() {
                       </span>
                     ))}
                   </div>
+
+                  {/* Links */}
+                  <div className="flex gap-4 pt-4">
+                    {p.figma && (
+                      <a
+                        href={p.figma}
+                        target="_blank"
+                        className="text-sm font-medium text-quaternary hover:underline"
+                      >
+                        View Figma →
+                      </a>
+                    )}
+                  </div>
                 </div>
               </article>
             ))}
@@ -243,6 +301,52 @@ export default function Skill() {
         </div>
 
         <hr className="border-secondary mx-8 md:mx-16 lg:mx-24" />
+
+        {/* UX/UI Section */}
+        <section
+          id="ux"
+          className="px-8 md:px-16 lg:px-24 py-16 md:py-20 bg-white"
+        >
+          <div className="max-w-4xl mx-auto fade-up">
+            <p className="text-sm uppercase tracking-[0.2em] text-quaternary font-semibold">
+              UX/UI
+            </p>
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight mt-3">
+              Design Approach
+            </h2>
+
+            <p className="text-tertiary/80 mt-6 text-lg leading-relaxed">
+              I design user-centered digital experiences by understanding user
+              needs, defining clear flows, and transforming ideas into intuitive
+              interfaces using Figma. My front-end background helps me bridge
+              the gap between design and development.
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-6 mt-12">
+              <div className="p-6 border rounded-2xl">
+                <h3 className="font-semibold text-xl mb-2">Research</h3>
+                <p className="text-sm text-tertiary/80">
+                  Understanding problems, target users and product goals.
+                </p>
+              </div>
+
+              <div className="p-6 border rounded-2xl">
+                <h3 className="font-semibold text-xl mb-2">Design</h3>
+                <p className="text-sm text-tertiary/80">
+                  Creating user flows, wireframes and high-fidelity UI in Figma.
+                </p>
+              </div>
+
+              <div className="p-6 border rounded-2xl">
+                <h3 className="font-semibold text-xl mb-2">Build</h3>
+                <p className="text-sm text-tertiary/80">
+                  Bringing designs to life with responsive front-end
+                  development.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Experience */}
         <section
@@ -258,7 +362,7 @@ export default function Skill() {
                 Where I've been.
               </h2>
             </div>
-            
+
             <div className="relative pl-9 md:pl-14 space-y-8 md:space-y-12">
               <div className="absolute left-3 md:left-5 top-0 bottom-0 w-px bg-secondary/50" />
 

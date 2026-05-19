@@ -135,7 +135,7 @@ export default function Footer() {
                 <p className="font-semibold text-primary text-sm md:text-base break-all">
                   {c.display}
                 </p>
-                <p className="text-xs text-secondary/70 mt-3">
+                <p className="text-xs text-secondary/70 mt-3">  
                   {copied === c.label
                     ? "✓ Copied to clipboard"
                     : c.link
