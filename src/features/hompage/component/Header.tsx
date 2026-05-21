@@ -183,8 +183,8 @@ export default function Header() {
               <div className="flex items-center gap-3 mt-3">
                 <div className="h-px w-8 bg-quaternary" />
                 <p className="text-secondary text-xl md:text-2xl font-medium">
-                  {/* Web Developer · Frontend-focused */}
-                  UX/UI-focused Frontend Developer
+                  Web Developer · UX/UI Designer
+                  {/*  Frontend Developer */}
                 </p>
               </div>
             </div>
@@ -267,16 +267,17 @@ export default function Header() {
                   // "Next.js",
                   // "TypeScript",
                   // "Tailwind",
-                  // "Node.js",
-                  // "MySQL",
-                  // "MongoDB",
+                
                   "Figma",
                   "User Flow",
-                  "Wireframing",
+                  "Wireframe",
                   "React",
                   "Next.js",
                   "TypeScript",
                   "Tailwind",
+                  "Node.js",
+                  "MySQL",
+                  "MongoDB",
                 ].map((w) => (
                   <span key={w} className="flex items-center gap-12">
                     {w} <span className="text-quaternary">✦</span>
