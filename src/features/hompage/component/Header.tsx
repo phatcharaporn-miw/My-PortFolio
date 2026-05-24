@@ -207,20 +207,20 @@ export default function Header() {
               >
                 View Projects <ArrowRight className="w-4 h-4" />
               </a>
-              <a
+              {/* <a
                 href="/Resume_Phatcharaporn_Nilphong.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 btn-outline border border-secondary text-primary py-3 px-7 rounded-full text-base font-medium"
               >
                 <Download className="w-4 h-4" /> Download Resume
-              </a>
+              </a> */}
             </div>
 
             <div className="fade-left delay-5 flex flex-wrap items-center gap-6 pt-2 text-sm text-secondary/80">
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-quaternary" />
-                Khon Kaen, Thailand
+                Chaiyaphum, Thailand
               </div>
             </div>
           </div>
