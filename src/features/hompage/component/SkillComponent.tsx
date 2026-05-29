@@ -144,21 +144,7 @@ export default function Skill() {
             {/* <p className="text-secondary text-sm md:text-base mb-10">Hover over a skill to see where I've used it</p> */}
           </div>
 
-          <div className="fade-up mb-8">
-            <p className="text-secondary text-sm md:text-base mb-4 font-medium">
-              - UX/UI Skills
-            </p>
-            <div className="flex flex-wrap gap-3">
-              {designSkills.map((s) => (
-                <span
-                  key={s}
-                  className="skill-badge bg-quaternary text-primary text-sm md:text-base lg:text-md py-2 px-5 md:py-3 md:px-6 rounded-full cursor-default"
-                >
-                  {s}
-                </span>
-              ))}
-            </div>
-          </div>
+  
 
           <div className="fade-up stagger-1 mb-4">
             <p className="text-secondary text-sm md:text-base mb-4 font-medium">
@@ -172,6 +158,22 @@ export default function Skill() {
                 >
                   {s.name}
                   {/* <span className="skill-tooltip">Used in: {s.used}</span> */}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="fade-up mb-8">
+            <p className="text-secondary text-sm md:text-base mb-4 font-medium">
+              - UX/UI Skills
+            </p>
+            <div className="flex flex-wrap gap-3">
+              {designSkills.map((s) => (
+                <span
+                  key={s}
+                  className="skill-badge border border-secondary text-tertiary text-sm md:text-base lg:text-md py-2 px-5 md:py-3 md:px-6 rounded-full bg-white cursor-default"
+                >
+                  {s}
                 </span>
               ))}
             </div>

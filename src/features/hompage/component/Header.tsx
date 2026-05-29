@@ -183,7 +183,7 @@ export default function Header() {
               <div className="flex items-center gap-3 mt-3">
                 <div className="h-px w-8 bg-quaternary" />
                 <p className="text-secondary text-xl md:text-2xl font-medium">
-                  Web Developer · UX/UI Designer
+                  Frontend Developer
                   {/*  Frontend Developer */}
                 </p>
               </div>
@@ -268,9 +268,9 @@ export default function Header() {
                   // "TypeScript",
                   // "Tailwind",
                 
-                  "Figma",
-                  "User Flow",
-                  "Wireframe",
+                  // "Figma",
+                  // "User Flow",
+                  // "Wireframe",
                   "React",
                   "Next.js",
                   "TypeScript",
