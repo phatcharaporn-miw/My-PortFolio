@@ -27,7 +27,7 @@ export default function Skill() {
     { name: "React.js", used: "Skllr. · Alumni App" },
     { name: "Next.js", used: "Skllr." },
     { name: "TypeScript", used: "Skllr." },
-    { name: "JavaScript", used: "Menu Kuru · BabyCare" },
+    { name: "JavaScript", used: "Menu Kuru" },
     { name: "Tailwind CSS", used: "Skllr." },
     { name: "HTML / CSS", used: "All Projects" },
     { name: "Node.js", used: "Alumni App" },
@@ -47,7 +47,6 @@ export default function Skill() {
     "Prototyping",
     "Responsive Design",
     "Usability",
-    "Design Systems",
     "Figma",
   ];
 
@@ -106,6 +105,20 @@ export default function Skill() {
       badge: ["Frontend", "UX/UI"],
       figma:
         "https://www.figma.com/design/1LtgpllRg1Yn7M3spMUGNq/Mocup?node-id=0-1&t=rRyv7N8QTo10jWuy-1",
+      github: "",
+    },
+    {
+      year: "2023",
+      name: "Comic Verse",
+      image: "/img/vue-workshop.png",
+      desc: "Workshop Vue.js ",
+      tags: ["Vue.js", "CSS"],
+      highlights: [
+        "Built the Comic Verse interface with Vue.js",
+        "Styled the interface with CSS",
+        "Applied Vue.js fundamentals in a workshop training",
+      ],
+      badge: ["Frontend"],
       github: "",
     },
   ];

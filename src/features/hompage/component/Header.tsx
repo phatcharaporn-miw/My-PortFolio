@@ -91,12 +91,12 @@ export default function Header() {
 
           {/* Right */}
           <div className="flex items-center gap-2">
-            <a
+            {/* <a
               href="#contact"
               className="hidden md:flex items-center gap-2 bg-quaternary text-tertiary py-2 px-4 rounded-full text-sm font-medium hover:opacity-90 transition-opacity"
             >
               Hire me <ArrowRight className="w-3.5 h-3.5" />
-            </a>
+            </a> */}
 
             {/* menu button */}
             <button
@@ -183,7 +183,7 @@ export default function Header() {
               <div className="flex items-center gap-3 mt-3">
                 <div className="h-px w-8 bg-quaternary" />
                 <p className="text-secondary text-xl md:text-2xl font-medium">
-                  Frontend Developer
+                  Software Engineer
                   {/*  Frontend Developer */}
                 </p>
               </div>
@@ -194,9 +194,9 @@ export default function Header() {
               {/* A Web Developer graduate with real-world experience through a
               Co-op internship. Open-minded, growth-driven, and always ready to
               learn whatever it takes to deliver great work. */}
-              A frontend developer with a strong interest in UX/UI design. I
+              {/* A frontend developer with a strong interest in UX/UI design. I
               enjoy creating intuitive and user-friendly digital experiences and
-              turning designs into responsive, real-world products.
+              turning designs into responsive, real-world products. */}
             </p>
 
             {/* Buttons */}
