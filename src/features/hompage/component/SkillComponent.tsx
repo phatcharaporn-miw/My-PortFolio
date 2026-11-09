@@ -31,6 +31,7 @@ export default function Skill() {
     { name: "Tailwind CSS", used: "Skllr." },
     { name: "HTML / CSS", used: "All Projects" },
     { name: "Node.js", used: "Alumni App" },
+    { name: "Vue.js (Basic)", used: "Comic Verse" },
   ];
 
   const otherSkills = [
@@ -63,7 +64,7 @@ export default function Skill() {
         "Zustand",
         "TanStack Query",
       ],
-      //
+      
       highlights: [
         "Implemented UI based on UX/UI designs from the design team",
         "Collaborated with designers to ensure usability and consistency",
@@ -77,11 +78,6 @@ export default function Skill() {
       image: "/img/alumni.png",
       desc: "Full-stack web app for the College of Computing alumni. Supports alumni management, donations, souvenir purchasing and a community webboard.",
       tags: ["React.js", "Node.js", "MySQL"],
-      // highlights: [
-      //   "Developed full-stack with React.js and Node.js",
-      //   "Built alumni management & donation system",
-      //   "Designed webboard for community interaction",
-      // ],
       highlights: [
         "Designed and developed user interfaces for alumni management",
         "Focused on usability and information structure",
@@ -108,7 +104,7 @@ export default function Skill() {
       github: "",
     },
     {
-      year: "2023",
+      year: "2026",
       name: "Comic Verse",
       image: "/img/vue-workshop.png",
       desc: "Workshop Vue.js ",
@@ -154,7 +150,6 @@ export default function Skill() {
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-tertiary mt-3">
               What I work with
             </h2>
-            {/* <p className="text-secondary text-sm md:text-base mb-10">Hover over a skill to see where I've used it</p> */}
           </div>
 
   
@@ -240,7 +235,7 @@ export default function Skill() {
                       <img
                         src={p.image}
                         alt={p.name}
-                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        className="absolute inset-0 w-full h-full object-cover transition-transform "
                       />
                     ) : (
                       // Fallback ถ้าไม่มีรูป
