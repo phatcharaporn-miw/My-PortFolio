@@ -35,8 +35,8 @@ export default function Header() {
         });
       },
       {
-        threshold: 0.3,
-        rootMargin: "-80px 0px 0px 0px", // offset ความสูง navbar
+        threshold: 0,
+        rootMargin: "-80px 0px -70% 0px",
       },
     );
 
