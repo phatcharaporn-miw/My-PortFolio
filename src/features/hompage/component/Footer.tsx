@@ -1,21 +1,12 @@
 "use client";
 import { useRef, useState } from "react";
 import {
-  ArrowRight,
   ArrowUpRight,
-  Code2,
-  Database,
   GitBranch,
   Mail,
   Phone,
-  Menu,
-  X,
   Copy,
   Check,
-  MapPin,
-  Download,
-  Briefcase,
-  GraduationCap,
 } from "lucide-react";
 
 export default function Footer() {

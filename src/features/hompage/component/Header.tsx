@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import "../../../css/header.css";
-import { ArrowRight, Download, MapPin, Menu, X } from "lucide-react";
+import { ArrowRight, MapPin, Menu, X } from "lucide-react";
 
 export default function Header() {
   const [loaded, setLoaded] = useState(false);
@@ -63,7 +63,7 @@ export default function Header() {
         <div className="flex items-center justify-between py-3 md:py-4">
           {/* Logo */}
           <a href="#about" className="flex items-center gap-2">
-            <span className="w-8 h-8 rounded-lg bg-quaternary text-tertiary grid place-items-center font-bold text-sm flex-shrink-0">
+            <span className="w-8 h-8 rounded-lg bg-quaternary text-tertiary grid place-items-center font-bold text-sm shrink-0">
               PN
             </span>
             <span className="text-primary font-bold text-base md:text-xl tracking-wide hidden sm:inline">
@@ -150,13 +150,13 @@ export default function Header() {
         <div className="absolute inset-0 grid-bg pointer-events-none opacity-40" />
 
         <div
-          className="absolute top-10 right-0 w-[500px] h-[500px] rounded-full pointer-events-none opacity-20"
+          className="absolute top-10 right-0 w-125 h-125 rounded-full pointer-events-none opacity-20"
           style={{
             background: "radial-gradient(circle, #FF9B51 0%, transparent 70%)",
           }}
         />
         <div
-          className="absolute bottom-0 left-0 w-[300px] h-[300px] rounded-full pointer-events-none opacity-10"
+          className="absolute bottom-0 left-0 w-75 h-75 rounded-full pointer-events-none opacity-10"
           style={{
             background: "radial-gradient(circle, #FF9B51 0%, transparent 70%)",
           }}
@@ -225,7 +225,7 @@ export default function Header() {
             </div>
           </div>
 
-          <div className="fade-right delay-2 flex-shrink-0 relative">
+          <div className="fade-right delay-2 shrink-0 relative">
             <div
               className="absolute -top-6 -right-6 w-28 h-28 opacity-20 pointer-events-none"
               style={{

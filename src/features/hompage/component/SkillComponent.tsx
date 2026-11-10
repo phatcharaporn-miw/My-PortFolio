@@ -39,7 +39,7 @@ export default function Skill() {
     "MongoDB",
     "Python (Basic)",
     "Java (Basic)",
-    "Kotlin (Basic)",
+    "Golang (Basic)",
   ];
 
   const designSkills = [
@@ -106,7 +106,7 @@ export default function Skill() {
     {
       year: "2026",
       name: "Comic Verse",
-      image: "/img/vue-workshop.png",
+      image: "/img/vueworkshop.png",
       desc: "Workshop Vue.js ",
       tags: ["Vue.js", "CSS"],
       highlights: [
@@ -229,8 +229,8 @@ export default function Skill() {
                 className={`reveal grid lg:grid-cols-2 gap-10 lg:gap-16 items-center ${i % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""}`}
               >
                 <div className="relative group fade-up">
-                  <div className="absolute -inset-2 bg-gradient-to-br from-primary/40 to-transparent rounded-3xl blur-xl opacity-60 group-hover:opacity-100 transition-opacity" />
-                  <div className="relative aspect-[4/3] rounded-3xl overflow-hidden border border-secondary bg-card">
+                  <div className="absolute -inset-2 bg-linear-to-br from-primary/40 to-transparent rounded-3xl blur-xl opacity-60 group-hover:opacity-100 transition-opacity" />
+                  <div className="relative aspect-4/3 rounded-3xl overflow-hidden border border-secondary bg-card">
                     {p.image ? (
                       <img
                         src={p.image}
