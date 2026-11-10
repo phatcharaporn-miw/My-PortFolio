@@ -129,7 +129,7 @@ export default function Header() {
                 {link.label}
               </a>
             ))}
-            <div className="pt-2 px-3">
+            {/* <div className="pt-2 px-3">
               <a
                 href="#contact"
                 onClick={() => setOpen(false)}
@@ -137,7 +137,7 @@ export default function Header() {
               >
                 Hire me <ArrowRight className="w-3.5 h-3.5" />
               </a>
-            </div>
+            </div> */}
           </div>
         )}
       </nav>
@@ -257,7 +257,6 @@ export default function Header() {
           </div>
         </div>
 
-        {/* Marquee */}
         <div className="mt-20 border-y border-white/10 py-5 overflow-hidden">
           <div className="flex animate-marquee whitespace-nowrap gap-12 text-xl md:text-2xl font-bold text-secondary/30">
             {[...Array(2)].map((_, k) => (

@@ -12,11 +12,11 @@ import {
 export default function Footer() {
   const [copied, setCopied] = useState<string | null>(null);
 
-  const handleCopy = (text: string, label: string) => {
-    navigator.clipboard.writeText(text);
-    setCopied(label);
-    setTimeout(() => setCopied(null), 2000);
-  };
+  // const handleCopy = (text: string, label: string) => {
+  //   navigator.clipboard.writeText(text);
+  //   setCopied(label);
+  //   setTimeout(() => setCopied(null), 2000);
+  // };
 
   const contacts = [
     {
@@ -147,9 +147,9 @@ export default function Footer() {
                 © 2026 Phatcharaporn Nilphong
               </span>
             </div>
-            <p className="text-secondary">
+            {/* <p className="text-secondary">
               Created with Next.js + Tailwind CSS
-            </p>
+            </p> */}
           </div>
         </div>
       </section>
